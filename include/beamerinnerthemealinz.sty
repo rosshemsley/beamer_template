@@ -13,7 +13,7 @@
     {\normalsize \textit{\universityDepartment{}} \textemdash{} \universityCourse{}}
 }
 \author[\presentationAuthorShort]{\presentationAuthor}
-\titlegraphic{\includegraphics[width=30mm]{resources/logo}} % logo
+% \titlegraphic{\includegraphics[width=30mm]{resources/logo}} % logo
 \date{\today}
 \subject{\presentationSubject}
 \keywords{\presentationKeywords{}}
@@ -29,9 +29,11 @@
     \vfill
     \begin{beamercolorbox}[wd=\paperwidth]{titlepage-headline}
     {
-        \par\smallskip
-        \usebeamerfont{title}{\hfill\inserttitle\hfill}
-        \par\bigskip
+        \centering
+        \par
+        % \smallskip
+        \usebeamerfont{title}{\inserttitle}
+        \par\medskip
     }
     \end{beamercolorbox}
     \vskip-2pt

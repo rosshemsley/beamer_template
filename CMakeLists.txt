@@ -20,15 +20,23 @@ set(BIBTEX_COMPILER biber)
 set(INPUT_FILES
    variables.tex
    my_commands.tex
+   include/main.tex
+   include/preamble.tex
+   include/meta.tex
+)
+
+set(STYLE_FILES
    beamercolorthemealinz.sty
    beamerfontthemealinz.sty
    beamerinnerthemealinz.sty
    beamerouterthemealinz.sty    
    beamerthemealinz.sty
-   include/main.tex
-   include/preamble.tex
-   include/meta.tex
 )
+
+foreach(file ${STYLE_FILES})
+   configure_file(${CMAKE_CURRENT_SOURCE_DIR}/style/${file}
+      ${CMAKE_CURRENT_BINARY_DIR}/${file} COPYONLY)
+endforeach()
 
 set(FIG_DIRS
    figures

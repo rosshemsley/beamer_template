@@ -1,0 +1,275 @@
+%------------------------------------------------------------------------------%
+% Comments
+%------------------------------------------------------------------------------%
+% \usepackage{todonotes}
+\usepackage{wasysym}
+\usepackage{mathrsfs}
+\usepackage{booktabs}
+
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\yep}{{\color{green!90!black!80}\ding{51}}}%
+\newcommand{\nope}{{\color{red!90!black!80}\ding{55}}}%
+\newcommand{\kinda}{{\color{orange!90!black!80}\scalebox{1.5}{$\thicksim$}}}%
+
+
+\setlength{\marginparwidth}{3cm}
+\newcommand{\ros}[1]{\todo[color=blue!40]{\scriptsize#1}}
+\newcommand{\oli}[1]{\todo[color=green!40]{\scriptsize#1}}
+
+%------------------------------------------------------------------------------%
+% Extreme value theory
+%------------------------------------------------------------------------------%
+\newcommand{\ei}{\theta}
+%------------------------------------------------------------------------------%
+% Mosaics
+%------------------------------------------------------------------------------%
+% Horrible hack! Fix this!
+\newcommand{\mosaic}{\mathfrak{m}_\proc{pht}}
+% \newcommand{\mosaic}{\operatorname{PHT(\hat{\ppp})}}
+\newcommand{\mm}{\mathfrak{m}}
+\newcommand{\window}{\mathbf{W}_{\!\rho}}
+\newcommand{\windowq}{\mathbf{W}_{\!q(\rho)}}
+\newcommand{\WW}{\mathbf{W}}
+\newcommand{\cell}{\mathscr{C}}
+%------------------------------------------------------------------------------%
+
+%------------------------------------------------------------------------------%
+% Line tessellation
+%------------------------------------------------------------------------------%
+\newcommand{\PHT}{\mathbf{X}}
+\newcommand{\linesintersecting}{\operatorname{\phi}}
+\newcommand{\convex}{\triangle}
+\newcommand{\trmin}{% 
+{%
+        \overset{%
+            \raisebox{-.2ex}[0ex][0ex]{%
+                \scalebox{0.6}{%
+                    $\triangle$%
+                }%
+            }%
+        }%
+        {m}%
+    }%
+}
+\newcommand{\cellmin}{% 
+{%
+        \overset{%
+            \raisebox{-.4ex}[0ex][0ex]{%
+                \scalebox{0.5}{%
+                    $\pentagon$%
+                }%
+            }%
+        }%
+        {m}%
+    }%
+}
+% % Events
+\newcommand{\vv}{v_{\rho}}
+\newcommand{\sumevent}[1]{E_{#1}}
+\newcommand{\minevent}[1]{E^\star_{#1}}
+\newcommand{\emptyevent}[1]{E^\circ_{#1}}
+% \newcommand{\overset{m}{\triangle}}
+
+%------------------------------------------------------------------------------%
+% Visibility walk
+%------------------------------------------------------------------------------%
+
+\newcommand{\ring}{\mathcal{R}}
+\newcommand{\grid}{C}
+\newcommand{\good}{G}
+\newcommand{\bad}{\operatorname{bad}}
+\newcommand{\orientation}{\proc{Orientation}}
+\newcommand{\wg}{\mathbf{W}}
+\newcommand{\paths}{\mathbf{P}}
+
+
+%------------------------------------------------------------------------------%
+% Pivot walk
+%------------------------------------------------------------------------------%
+\newcommand{\Tr}{\operatorname{T}}
+\newcommand{\pivotwalk}{\text{Pivot-Walk}}
+\newcommand{\mystar}{\operatorname{star}}
+\newcommand{\sink}{\operatorname{sink}}
+\newcommand{\source}{\operatorname{source}}
+\newcommand{\pow}{\mathcal{P}}
+\newcommand{\conv}{\operatorname{Conv}}
+
+
+%------------------------------------------------------------------------------%
+% Cone Walk
+%------------------------------------------------------------------------------%
+\newcommand{\stoppers}{\mathcal{Z}}
+
+
+%------------------------------------------------------------------------------%
+% Asymptotics
+%------------------------------------------------------------------------------%
+\newcommand{\polylog}{\operatorname{polylog}}
+
+%------------------------------------------------------------------------------%
+% Sigma-algebras
+%------------------------------------------------------------------------------%
+\newcommand{\sigmaalgebra}{\mathcal{F}}
+\newcommand{\countingalgebra}{\mathcal{M}}
+\newcommand{\borel}{\mathcal{B}}
+
+
+%------------------------------------------------------------------------------%
+% Spaces
+%------------------------------------------------------------------------------%
+\newcommand{\measurespace}{\mathbf{S}}
+\newcommand{\generalspace}{\mathbf{E}}
+\newcommand{\reals}{\mathbf{R}}
+\newcommand{\integers}{\mathbf{Z}}
+\newcommand{\naturals}{\mathbf{N}}
+\newcommand{\countingmeasures}{\mathbf{M}}
+\newcommand{\affinelines}{\mathcal{A}}
+\newcommand{\sphere}{\mathbf{S}}
+
+%------------------------------------------------------------------------------%
+% Probability
+%------------------------------------------------------------------------------%
+\newcommand{\p}{\operatorname{\vmathbb{P}}}
+\newcommand{\e}{\operatorname{\vmathbb{E}}}
+\newcommand{\var}{\operatorname{Var}}
+% \newcommand{\ind}{\mathbbold{1}\,}
+% \mathds{1} 
+\newcommand{\ind}[1]{\mathds{1}_{#1}\,}
+\newcommand{\indc}[1]{\mathbb{1}_{#1}^\text{c}\,}
+% \newcommand{\ind}[1]{\mathbb{1}_{#1}\,}
+% \newcommand{\ind}{\mathbbold{1}\,}
+\newcommand{\I}{\mathbf{I}}
+
+%------------------------------------------------------------------------------%
+% Measures
+%------------------------------------------------------------------------------%
+\newcommand{\dirac}{\delta}
+\newcommand{\counting}{\upeta}
+\newcommand{\generalmeasure}{\upmu}
+\newcommand{\spheremeasure}{\sigma}
+\newcommand{\lebesgue}{\lambda}
+
+
+%------------------------------------------------------------------------------%
+% Random variables
+%------------------------------------------------------------------------------%
+\newcommand{\Po}{\operatorname{Po}}
+\newcommand{\Unif}{\operatorname{Unif}}
+\newcommand{\Gauss}{\operatorname{Gauss}}
+
+%------------------------------------------------------------------------------%
+% Geometry
+%------------------------------------------------------------------------------%
+\newcommand{\DT}{\operatorname{Del}}
+\newcommand{\VD}{\operatorname{Vor}}
+\newcommand{\genericpoints}{\mathbf{X}}
+\newcommand{\tessellation}{\mathfrak{m}}
+\newcommand{\degree}{\operatorname{degree}}
+\newcommand{\vertex}{\operatorname{vertex}}
+\newcommand{\neighbour}{\operatorname{neighbour}}
+\newcommand{\face}{\operatorname{face}}
+
+%------------------------------------------------------------------------------%
+% Regions
+%------------------------------------------------------------------------------%
+\newcommand{\domain}{D}
+\newcommand{\ellipse}{\operatorname{Ell}}
+
+% Rename this!
+\newcommand{\ball}{\kappa}
+
+% For balls.
+% \newcommand{\B}{B}
+
+%------------------------------------------------------------------------------%
+% Names
+%------------------------------------------------------------------------------%
+\newcommand{\cgal}{\textsc{Cgal}}
+
+%------------------------------------------------------------------------------%
+% Graphs
+%------------------------------------------------------------------------------%
+\newcommand{\neighbours}{\operatorname{neighbours}}
+\newcommand{\depgraph}{\mathbf{G}}
+
+\newcommand{\depgraphs}{\Lambda_K}
+\newcommand{\cells}{V_C}
+\newcommand{\lines}{V_L}
+
+
+
+%------------------------------------------------------------------------------%
+% Processes
+%------------------------------------------------------------------------------%
+\newcommand{\ppp}{\genericpoints}
+\newcommand{\pht}{\hat{\ppp}}
+\newcommand{\intensity}{\upmu} %\mathbf{\mu}}
+
+%------------------------------------------------------------------------------%
+% Cone walk
+%------------------------------------------------------------------------------%
+\newcommand{\sites}{\mathbf{X}}
+\newcommand{\cone}{\operatorname{Cone}}
+\newcommand{\disc}{\operatorname{Disc}}
+\newcommand{\Wo}{\ensuremath W^\odot}
+
+%------------------------------------------------------------------------------%
+% Mathbf
+%------------------------------------------------------------------------------%
+\newcommand{\bZ}{\mathbf{Z}}
+\newcommand{\bG}{\mathbf{G}}
+\newcommand{\bX}{\mathbf{X}}
+\newcommand{\bR}{\mathbf{R}}
+
+%------------------------------------------------------------------------------%
+% mathcal
+%------------------------------------------------------------------------------%
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cQ}{\mathcal{Q}}
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\sC}{\mathcal{C}}
+\newcommand{\cK}{\mathcal{K}}
+
+%------------------------------------------------------------------------------%
+% Colors
+%------------------------------------------------------------------------------%
+\newcommand{\red}{\color{red}}
+
+%------------------------------------------------------------------------------%
+% Utils
+%------------------------------------------------------------------------------%
+
+
+\newcommand{\tth}{\textit{th}}
+\DeclareRobustCommand{\stirling}{\genfrac\{\}{0pt}{}}
+\newcommand{\support}{\operatorname{supp}}
+\newcommand{\makeset}[1]{\Big\{\,#1\,\Big\}}
+\newcommand{\converge}[2][n]{\underset{#1\rightarrow #2}{\longrightarrow}}
+\newcommand{\eq}[2][n]{\underset{#1\rightarrow #2}{\sim}}
+
+% For defining algorithm input and outputs.
+\newcommand{\defalgorithm}[3]{
+    \begin{table}[ht]
+        \begin{tabular*}{\textwidth}{l l @{\extracolsep{\fill}} }
+        \toprule
+            \multicolumn{2}{l}{\proc{#1}}  \\ 
+        \midrule
+            \textbf{Input}  & {#2}         \\ 
+            \textbf{Output} & {#3}         \\ 
+        \bottomrule
+        \end{tabular*}
+    \end{table}
+}
+
+%------------------------------------------------------------------------------%
+
+
+%------------------------------------------------------------------------------%
+% Floats
+%------------------------------------------------------------------------------%
+
+% \DeclareFloatingEnvironment[fileext=frm,placement={tbp},name=Listing]{codefloat}
+% % \captionsetup[codefloat]{labelfont=bf}
+
+%------------------------------------------------------------------------------%

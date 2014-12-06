@@ -10,8 +10,13 @@
 % font config
 % -----------------------------------
 
-\setsansfont{Linux Biolinum}
-\setromanfont{Linux Libertine}
+% My latexmk does not find the fonts unless I do this?
+\RequirePackage{libertine}
+\RequirePackage[libertine]{newtxmath}
+
+% \setsansfont{Linux Biolinum}
+% \setromanfont{Linux Libertine}
+
 \setmonofont[Scale=0.9]{Consolas}
 
 % -----------------------------------

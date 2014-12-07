@@ -19,13 +19,13 @@ set(BIBTEX_COMPILER biber)
 
 set(INPUT_FILES
    variables.tex
-   my_commands.tex
-   include/main.tex
    include/preamble.tex
-   include/meta.tex
 )
 
+# file(GLOB STYLE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/include/*.sty")
+
 set(STYLE_FILES
+   presentation.cls
    beamercolorthemealinz.sty
    beamerfontthemealinz.sty
    beamerinnerthemealinz.sty
@@ -34,7 +34,7 @@ set(STYLE_FILES
 )
 
 foreach(file ${STYLE_FILES})
-   configure_file(${CMAKE_CURRENT_SOURCE_DIR}/style/${file}
+   configure_file(${CMAKE_CURRENT_SOURCE_DIR}/include/${file}
       ${CMAKE_CURRENT_BINARY_DIR}/${file} COPYONLY)
 endforeach()
 

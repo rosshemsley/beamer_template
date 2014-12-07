@@ -1,7 +1,7 @@
 # XeLaTeX Beamer Template
 
 A flat, nice, Beamer theme. Because Beamer themes are almost universally
-horrible. This theme is a fork of [], and has been modified to improve the build
+horrible. This theme is a fork of  `KLINGTdotNET`, and has been modified to improve the build
 process.
 
 ## Requiremenets
@@ -15,7 +15,6 @@ process.
 ### Fonts ###
 
 - Linux Biolinum
-- Linux Libertine
 - Consolas
 
 
